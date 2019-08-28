@@ -1,8 +1,3 @@
-.cardText {
-  align-self: center;
-  text-align: left;
-  margin: auto 5% auto 5%;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,7 +148,6 @@ h1 {
 }
 h2 {
   font-size: 3rem;
-  padding-bottom: 10px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
@@ -168,7 +162,6 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
 }
 a {
   color: white;
@@ -290,6 +283,8 @@ header h1 {
 }
 header h2 {
   font-size: 2rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 header p {
   font-size: 0.75rem;
@@ -307,9 +302,9 @@ footer {
 #main .main-links {
   font-size: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 1%;
-  width: 15%;
+  width: 20%;
   align-self: flex-end;
 }
 #main .main-links a {
@@ -333,19 +328,33 @@ footer {
   background-color: ghostwhite;
   align-items: center;
   border-bottom: 2px solid black;
+  height: 50px;
 }
 #main .main-images .box-wrapper .info .box-title {
-  height: 30%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 10px;
 }
 #main .main-images .box-wrapper .info .voting {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 #main .main-images .box-wrapper .info .voting p {
-  height: 1%;
-  font-size: 1.1rem;
+  height: auto;
+  font-size: 1.2rem;
+  padding-bottom: 0;
+}
+#main .main-images .box-wrapper .info .voting i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#main .main-images .box-wrapper .info .voting .fa-chevron-up:hover {
+  color: #AD75B1;
+  cursor: pointer;
+}
+#main .main-images .box-wrapper .info .voting .fa-chevron-down:hover {
+  color: #83987E;
+  cursor: pointer;
 }
 #main .main-images .box-wrapper img {
   width: 100%;
@@ -360,6 +369,7 @@ footer {
   justify-content: space-between;
   padding-bottom: 15%;
   background-color: #fff;
+  padding-right: 10%;
 }
 #featured .featured-artist {
   display: flex;
@@ -378,13 +388,23 @@ footer {
   min-width: 400px;
 }
 #featured .featured-text {
-  margin: 5% 10% 5% 10%;
+  margin: 5% 0 5% 10%;
   width: 35%;
 }
 #featured .featured-text a {
   color: #000;
   text-align: right;
   width: 10%;
+  margin: 20% 0 5% 75%;
+}
+#featured .featured-text .top-hr {
+  margin-left: 0;
+  width: 20%;
+  margin: 0 auto 5% 0;
+}
+#featured .featured-text .bottom-hr {
+  width: 20%;
+  margin: 5% 0 0 auto;
 }
 #call-to-action {
   background-color: #C6CFC5;
@@ -400,6 +420,8 @@ footer {
   background-color: #E7D5E7;
   margin-bottom: 5%;
   box-shadow: 10px 10px 5px gray;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 #call-to-action .cta-card .card-text {
   align-self: center;
@@ -407,6 +429,7 @@ footer {
   margin: auto 5% auto 5%;
   max-width: 100%;
   width: 62em;
+  font-size: 2rem;
 }
 #call-to-action .cta-card .square {
   height: 200px;
@@ -414,26 +437,44 @@ footer {
   background-color: #AD75B1;
   min-width: 200px;
 }
+#call-to-action .cta-card i {
+  margin-right: 5%;
+}
 #call-to-action .myButton {
-  background-color: transparent;
+  background-color: #fff;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
   border-radius: 9px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   display: inline-block;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   font-family: Arial;
   font-size: 17px;
   padding: 12px 31px;
   text-decoration: none;
 }
 #call-to-action .myButton:hover {
-  background-color: transparent;
-  border-color: #AD75B1;
-  color: #AD75B1;
+  background-color: #AD75B1;
+  border-color: #000;
+  color: #fff;
 }
 #call-to-action .myButton:active {
   position: relative;
   top: 1px;
+}
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vh;
+  justify-content: space-evenly;
+}
+#footer .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer-links a {
+  font-size: 1.2rem;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
