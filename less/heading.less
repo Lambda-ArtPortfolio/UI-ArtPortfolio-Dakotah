@@ -10,6 +10,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
+    @media @tablet {
+        background-position-x: -350px;
+    }
     @media @phone {
         padding-top: 5%;
         background-position-x: -102%;
@@ -26,6 +29,9 @@ header {
         padding: 0 15% 0 15%;
         line-height: 1.2;
 
+        @media @tablet {
+            text-align: center;
+        }
         @media @phone {
             text-align: center;
         }
