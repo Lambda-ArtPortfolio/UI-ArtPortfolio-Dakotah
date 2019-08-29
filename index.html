@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700,900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/247fe43040.js"></script>
+    <script src="https://use.fontawesome.com/c461fd25a1.js"></script>
     <!-- import CSS -->
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -159,8 +159,24 @@
                     paint something, I don't want to have to explain what it is.</p>
                 <a href="https://500px.com/jenniferbin" target="_blank">Visit Jennifer's Portfolio</a>
                 <hr class="bottom-hr">
+                
             </div>
+        
         </section> <!-- end featured -->
+        <section id="featured-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img class="carousel-imgs" src="img/carousel3.jpg" id="lastClone" alt="">
+                    <img class="carousel-imgs" src="img/carousel1.jpg" alt="">
+                    <img class="carousel-imgs" src="img/carousel2.jpg" alt="">
+                    <img class="carousel-imgs" src="img/carousel3.jpg" alt="">
+                    <img class="carousel-imgs" src="img/carousel1.jpg" id="firstClone" alt="">
+                </div>
+                
+            </div>
+            <button id="prevBtn">Prev</button>
+            <button id="nextBtn">Next</button>
+        </section>
         <section id="call-to-action"> <!-- open call to action section -->
             <div class="cta-card">
                 <p class="card-text">Create a professional portfolio displaying your artwork</p>
@@ -194,6 +210,7 @@
         </footer> <!-- close footer -->
 
     </div> <!-- end wrapper -->
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
