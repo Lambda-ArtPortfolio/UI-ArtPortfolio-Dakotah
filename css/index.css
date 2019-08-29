@@ -145,6 +145,8 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 h2 {
   font-size: 3rem;
@@ -205,7 +207,7 @@ img {
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 2% 15% 0 15%;
+  padding: 2% 15% 0 5%;
   width: 100%;
   background-color: #232323;
 }
@@ -220,7 +222,7 @@ img {
   justify-content: space-evenly;
   width: 40%;
   align-items: center;
-  margin-right: 30%;
+  margin-right: 24%;
 }
 @media (max-width: 800px) {
   .navbar-wrapper .navbar {
@@ -247,7 +249,16 @@ img {
 .navbar-wrapper h4 :hover {
   color: #AD75B1;
 }
-header {
+.about-nav {
+  background-color: #f9f5f9;
+}
+.about-nav .navbar a {
+  color: black;
+}
+.about-nav h4 a {
+  color: #000;
+}
+.home-header {
   height: 70vh;
   background-image: url("../img/jumbo-banner.jpg");
   background-attachment: fixed;
@@ -259,19 +270,14 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 800px) {
-  header {
-    background-position-x: -350px;
-  }
-}
 @media (max-width: 500px) {
-  header {
+  .home-header {
     padding-top: 5%;
     background-position-x: -102%;
     background-position-y: 100px;
   }
 }
-header .heading-text-wrapper {
+.home-header .heading-text-wrapper {
   align-self: center;
   justify-content: center;
   align-items: center;
@@ -282,16 +288,16 @@ header .heading-text-wrapper {
   line-height: 1.2;
 }
 @media (max-width: 800px) {
-  header .heading-text-wrapper {
+  .home-header .heading-text-wrapper {
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  header .heading-text-wrapper {
+  .home-header .heading-text-wrapper {
     text-align: center;
   }
 }
-header .heading-text-wrapper .myButton {
+.home-header .heading-text-wrapper .myButton {
   background-color: transparent;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
@@ -306,29 +312,29 @@ header .heading-text-wrapper .myButton {
   text-decoration: none;
   margin-top: 10%;
 }
-header .heading-text-wrapper .myButton:hover {
+.home-header .heading-text-wrapper .myButton:hover {
   background-color: transparent;
   border-color: #AD75B1;
   color: #AD75B1;
 }
-header .heading-text-wrapper .myButton:active {
+.home-header .heading-text-wrapper .myButton:active {
   position: relative;
   top: 1px;
 }
-header .img-credit {
+.home-header .img-credit {
   align-self: flex-end;
   margin-right: 10px;
 }
-header h1 {
+.home-header h1 {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
 }
-header h2 {
+.home-header h2 {
   font-size: 2rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-header p {
+.home-header p {
   font-size: 0.75rem;
 }
 footer {
@@ -681,4 +687,27 @@ footer {
   font-size: 1.2rem;
   margin-top: 5%;
   margin-bottom: 2%;
+}
+#team {
+  background-color: #f9f5f9;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+}
+#team .profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#team .profiles .portfolio {
+  margin: 2% 1% 2% 1%;
+}
+#team .profiles .portfolio img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5%;
+}
+#team .profiles .portfolio .salvador {
+  width: 300px;
 }
