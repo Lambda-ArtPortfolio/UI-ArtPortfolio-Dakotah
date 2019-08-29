@@ -11,7 +11,7 @@
     }
 
     @media @phone {
-        padding: 1% 2% 10% 2%;
+        padding: 5% 2% 10% 2%;
     }
 
     .main-links{
@@ -21,10 +21,19 @@
         height: 1%;
         width: 20%;
         align-self: flex-end;
+        
+        @media @phone {
+            width: 100%;
+            justify-content: space-evenly;
+        }
 
         a {
             color: #000;
             text-align: right;
+
+            @media @phone {
+                text-align: left;
+            }
         }
     }
 
@@ -178,10 +187,12 @@
 
         @media @phone {
             width: 80%;
+            display: flex;
+            flex-direction: column;
         }
 
 
-        h2 {
+        h3 {
             margin-bottom: 5%;
         }
 
@@ -190,7 +201,12 @@
             text-align: right;
             width: 10%;
             margin: 20% 0 5% 75%;
+            align-self: flex-end;
 
+            @media @phone {
+                width: 100%;
+                margin: 10% 0 0 0;
+            }
         }
 
         .top-hr {
@@ -203,6 +219,9 @@
             width: 20%;
             margin: 20% 0 0 auto;
 
+            @media @phone {
+                margin-top: 10%;
+            }
         }
     }  
 

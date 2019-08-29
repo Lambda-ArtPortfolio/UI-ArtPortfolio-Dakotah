@@ -152,7 +152,9 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 h4 {
   font-size: 2.5rem;
@@ -331,7 +333,7 @@ footer {
 }
 @media (max-width: 500px) {
   #main {
-    padding: 1% 2% 10% 2%;
+    padding: 5% 2% 10% 2%;
   }
 }
 #main .main-links {
@@ -342,9 +344,20 @@ footer {
   width: 20%;
   align-self: flex-end;
 }
+@media (max-width: 500px) {
+  #main .main-links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 #main .main-links a {
   color: #000;
   text-align: right;
+}
+@media (max-width: 500px) {
+  #main .main-links a {
+    text-align: left;
+  }
 }
 #main .main-images {
   display: flex;
@@ -479,9 +492,11 @@ footer {
 @media (max-width: 500px) {
   #featured .featured-text {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 }
-#featured .featured-text h2 {
+#featured .featured-text h3 {
   margin-bottom: 5%;
 }
 #featured .featured-text a {
@@ -489,6 +504,13 @@ footer {
   text-align: right;
   width: 10%;
   margin: 20% 0 5% 75%;
+  align-self: flex-end;
+}
+@media (max-width: 500px) {
+  #featured .featured-text a {
+    width: 100%;
+    margin: 10% 0 0 0;
+  }
 }
 #featured .featured-text .top-hr {
   margin-left: 0;
@@ -498,6 +520,11 @@ footer {
 #featured .featured-text .bottom-hr {
   width: 20%;
   margin: 20% 0 0 auto;
+}
+@media (max-width: 500px) {
+  #featured .featured-text .bottom-hr {
+    margin-top: 10%;
+  }
 }
 #call-to-action {
   background-color: #fff;
