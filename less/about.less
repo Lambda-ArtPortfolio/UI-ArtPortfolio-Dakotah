@@ -4,21 +4,55 @@
     flex-direction: column;
     padding: 5%;
     width: 100%;
+    align-items: center;
+
+    @media (max-width: 1100px) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    @media @tablet {
+        padding: 5% 0 5% 0;
+    }
 
     .profiles {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         .portfolio {
             margin: 2% 1% 2% 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media @phone {
+                margin: 5% 2% 5% 2%;
+            }
 
             img {
             max-width: 300px;
-            width: 100%;
+            width: 300px;
             border-radius: 5%;
-            }
 
+            
+
+            @media @phone {
+                max-width: 300px;
+            }
+            }
+            h2 {
+                margin-top: 3%;
+
+                a {
+                    color: #000;
+                }
+            }
+            
             .salvador {
                 width: 300px;
             }
