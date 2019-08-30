@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'Roboto', sans-serif;
+    // line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-family: @opensans;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-family: @opensans;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    font-family: @opensans;
+    font-weight: 700;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: @main-color;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ .container {
+   width: 100%;
+ }
+
+ ::selection {
+  // background: #4affcf;
+  background: mediumspringgreen;
+}
+
+.myButton {
+  background-color:transparent;
+  -moz-border-radius:9px;
+  -webkit-border-radius:9px;
+  border-radius:9px;
+  border:1px solid @main-color;
+  display:inline-block;
+  cursor:pointer;
+  color:@main-color;
+  font-family:Arial;
+  font-size:17px;
+  padding:12px 31px;
+  text-decoration:none;
+}
+.myButton:hover {
+  background-color: transparent;
+  border-color: @main-color;
+  color: @main-color;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
